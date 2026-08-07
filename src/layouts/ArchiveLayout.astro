@@ -5,7 +5,6 @@ import { ClientRouter } from 'astro:transitions';
 import { SITE_CONFIG } from '../config.ts';
 import ContactCta from '../components/ContactCta.astro';
 import Footer from '../components/Footer.astro';
-import CursorEyes from '../components/CursorEyes.astro';
 
 interface Props {
   title?: string;
@@ -71,6 +70,5 @@ const defaultTheme = `${baseTheme}-dark`;
         <Footer />
       </main>
     </div>
-    <CursorEyes />
   </body>
 </html>
