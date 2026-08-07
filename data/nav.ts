@@ -1,30 +1,15 @@
-export interface NavLink {
-  label: string;
-  href: string;
-}
+export const navLinks = [
+  { href: '#about', label: 'About' },
+] as const;
 
-export interface NavGroup {
-  label: string;
-  children: NavLink[];
-}
+export const evidenceLinks = [
+  { href: '#', label: 'Modelado' },
+  { href: '#', label: 'Normalización' },
+  { href: '#', label: 'SQL' },
+  { href: '#', label: 'Proyecto' },
+] as const;
 
-export type NavItem = NavLink | NavGroup;
-
-export const navLinks: NavItem[] = [
-  { label: 'About', href: '/#about' },
-  {
-    label: 'Evidencias',
-    children: [
-      { label: 'Modelado', href: '#' },
-      { label: 'Normalización', href: '#' },
-      { label: 'SQL', href: '#' },
-      { label: 'Proyecto', href: '#' },
-    ],
-  },
-];
-
-// Botón de video de presentación (separado del menú normal, ver SideNav.astro)
 export const presentationVideo = {
+  href: '#',
   label: 'Video de presentación',
-  href: '#', // TODO: reemplaza con el link real de tu video (YouTube, Drive, etc.)
-};
+} as const;
