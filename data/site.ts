@@ -37,10 +37,6 @@ export const site = {
           'Música',
         ],
       },
-      {
-        heading: 'Tecnologías con las que estoy aprendiendo',
-        techItems: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'Astro'],
-      },
     ],
   },
   experiences: [],
