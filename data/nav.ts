@@ -1,5 +1,5 @@
 export const navLinks = [
-  { href: '#about', label: 'About' },
+  { href: '#about', label: 'Sobre mí' },
 ] as const;
 
 export const evidenceLinks = [
