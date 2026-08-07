@@ -37,20 +37,20 @@ const imageSrc = imageOverride ?? (project.image ? (project.image.startsWith('/'
 
     {project.solution && (
       <div>
-        <dt class="text-xs uppercase tracking-wider text-accent">Solution</dt>
+        <dt class="text-xs uppercase tracking-wider text-accent">Solución</dt>
         <dd class="mt-1.5 text-slate">{project.solution}</dd>
       </div>
     )}
     {project.impact && (
       <div>
-        <dt class="text-xs uppercase tracking-wider text-accent">Impact</dt>
+        <dt class="text-xs uppercase tracking-wider text-accent">Impacto</dt>
         <dd class="mt-1.5 text-slate">{project.impact}</dd>
       </div>
     )}
   </div>
 
   <div>
-    <dt class="mb-3 text-xs uppercase tracking-wider text-accent">Technologies / Tools</dt>
+    <dt class="mb-3 text-xs uppercase tracking-wider text-accent">Tecnologías / Herramientas</dt>
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
       {techCategories.map((techCat) => (
         <div>

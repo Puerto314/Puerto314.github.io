@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { site } from '@data/site';
 import SideNav from '../components/SideNav.astro';
 import MobileHeader from '../components/MobileHeader.astro';
+import CursorEyes from '../components/CursorEyes.astro';
 import { ClientRouter } from 'astro:transitions';
 import { SITE_CONFIG } from '../config.ts';
 
@@ -19,7 +20,7 @@ const defaultTheme = `${baseTheme}-dark`;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -123,5 +124,6 @@ const defaultTheme = `${baseTheme}-dark`;
         setActive(sections[0].id);
       })();
     </script>
+    <CursorEyes />
   </body>
 </html>
