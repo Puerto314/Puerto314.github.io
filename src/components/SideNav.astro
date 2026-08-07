@@ -1,5 +1,5 @@
 ---
-import { navLinks } from '@data/nav';
+import { navLinks, evidenceLinks, presentationVideo } from '@data/nav';
 import SiteIntro from './SiteIntro.astro';
 ---
 
@@ -7,6 +7,15 @@ import SiteIntro from './SiteIntro.astro';
   <div class="reveal-content sticky top-0 flex h-screen max-h-screen flex-col justify-between items-center overflow-y-auto pt-22 px-12 text-center">
     <div class="space-y-12">
       <SiteIntro variant="sidebar" />
+
+      <a
+        href={presentationVideo.href}
+        target="_blank"
+        rel="noreferrer"
+        class="inline-flex items-center justify-center rounded-full border border-accent/60 px-5 py-2 text-sm font-semibold text-accent transition hover:bg-accent/10"
+      >
+        {presentationVideo.label}
+      </a>
 
       <nav aria-label="Primary">
         <ul class="flex flex-col items-center gap-4">
@@ -19,6 +28,22 @@ import SiteIntro from './SiteIntro.astro';
               </li>
             ))
           }
+          <li class="nav-group">
+            <button type="button" class="nav-link nav-group-toggle" aria-expanded="false">
+              <span>Evidencias</span>
+            </button>
+            <ul class="nav-submenu">
+              {
+                evidenceLinks.map((link) => (
+                  <li>
+                    <a href={link.href} class="nav-sublink">
+                      <span>{link.label}</span>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
@@ -38,4 +63,55 @@ import SiteIntro from './SiteIntro.astro';
       transform: translateY(0);
     }
   }
+
+  .nav-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-group-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+  }
+
+  .nav-submenu {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-group.open .nav-submenu {
+    display: flex;
+  }
+
+  .nav-sublink {
+    font-size: 0.875rem;
+    opacity: 0.8;
+    transition: opacity 0.15s ease;
+  }
+
+  .nav-sublink:hover {
+    opacity: 1;
+  }
 </style>
+
+<script>
+  function initNavGroups() {
+    document.querySelectorAll('.nav-group-toggle').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const group = btn.closest('.nav-group');
+        if (!group) return;
+        const isOpen = group.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+    });
+  }
+
+  initNavGroups();
+  document.addEventListener('astro:page-load', initNavGroups);
+</script>
