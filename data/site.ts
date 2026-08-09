@@ -20,7 +20,7 @@ export const site = {
     role: 'Estudiante de Ingeniería de Sistemas',
     tagline: 'Aprendiendo a construir software con buenas bases, con especial interés en ciberseguridad.',
     contact: 'Abierto a proyectos, prácticas y colaboraciones.',
-    avatarSrc: '/favicon.svg',
+    avatarSrc: '/Avatar.png',
     avatarAlt: 'Esteban Puerto Rojas',
   },
   about: {
