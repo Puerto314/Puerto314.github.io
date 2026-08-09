@@ -21,7 +21,7 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   <h2 id="proyecto-heading" class="section-heading">Proyecto</h2>
   <div class:list={[compact ? 'space-y-8' : 'space-y-20']}>
     {projects.length === 0 && (
-      <p class="body-copy">Aún no hay proyectos agregados en esta sección.</p>
+      <p class="body-copy">Proyectos</p>
     )}
     {projects.map((project) => (
       <ProjectCard
