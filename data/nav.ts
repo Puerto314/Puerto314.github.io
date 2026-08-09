@@ -1,12 +1,9 @@
 export const navLinks = [
   { href: '#about', label: 'Sobre mí' },
-] as const;
-
-export const evidenceLinks = [
-  { href: '#', label: 'Modelado' },
-  { href: '#', label: 'Normalización' },
-  { href: '#', label: 'SQL' },
-  { href: '#', label: 'Proyecto' },
+  { href: '#modelado', label: 'Modelado' },
+  { href: '#normalizacion', label: 'Normalización' },
+  { href: '#sql', label: 'SQL' },
+  { href: '#proyecto', label: 'Proyecto' },
 ] as const;
 
 export const presentationVideo = {

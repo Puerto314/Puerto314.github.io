@@ -1,5 +1,5 @@
 ---
-import { navLinks, evidenceLinks, presentationVideo } from '@data/nav';
+import { navLinks, presentationVideo } from '@data/nav';
 import SiteIntro from './SiteIntro.astro';
 ---
 
@@ -8,7 +8,7 @@ import SiteIntro from './SiteIntro.astro';
     <div class="space-y-12">
       <SiteIntro variant="sidebar" />
 
-      <a
+      
         href={presentationVideo.href}
         target="_blank"
         rel="noreferrer"
@@ -20,35 +20,19 @@ import SiteIntro from './SiteIntro.astro';
       <nav aria-label="Principal">
         <ul class="flex flex-col items-center gap-4">
           {
-            navLinks.map((link) => (
+            navLinks.map((link, index) => (
               <li>
-                <a href={`${import.meta.env.BASE_URL}${link.href}`} class="nav-link" data-section-link>
+                
+                  href={`${import.meta.env.BASE_URL}${link.href}`}
+                  class="nav-link"
+                  data-section-link
+                  aria-current={index === 0 ? 'true' : undefined}
+                >
                   <span>{link.label}</span>
                 </a>
               </li>
             ))
           }
-          <li class="nav-group">
-            <button type="button" class="nav-link nav-group-toggle" aria-expanded="false">
-              <span>Evidencias</span>
-              <svg class="nav-chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                <path d="M1.5 3.5L5 7L8.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-            <div class="nav-submenu-wrapper">
-              <ul class="nav-submenu">
-                {
-                  evidenceLinks.map((link) => (
-                    <li>
-                      <a href={link.href} class="nav-sublink">
-                        <span>{link.label}</span>
-                      </a>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-          </li>
         </ul>
       </nav>
     </div>
@@ -68,115 +52,45 @@ import SiteIntro from './SiteIntro.astro';
       transform: translateY(0);
     }
   }
-
-  .nav-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-group-toggle {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font: inherit;
-    padding: 0;
-    color: inherit;
-    transition: color 0.2s ease;
-  }
-
-  .nav-group-toggle:hover {
-    color: var(--color-accent);
-  }
-
-  .nav-chevron {
-    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-    color: var(--color-accent);
-  }
-
-  .nav-group.open .nav-chevron {
-    transform: rotate(180deg);
-  }
-
-  .nav-submenu-wrapper {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
-    width: 100%;
-  }
-
-  .nav-group.open .nav-submenu-wrapper {
-    grid-template-rows: 1fr;
-  }
-
-  .nav-submenu {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    margin-top: 0;
-    padding-top: 0;
-    border-left: 1px solid color-mix(in srgb, var(--color-accent), transparent 65%);
-    opacity: 0;
-    transition: opacity 0.25s ease 0.05s, margin-top 0.3s ease, padding-top 0.3s ease;
-  }
-
-  .nav-group.open .nav-submenu {
-    margin-top: 0.75rem;
-    padding-top: 0.6rem;
-    opacity: 1;
-  }
-
-  .nav-sublink {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--color-slate-light, inherit);
-    opacity: 0.75;
-    transition: opacity 0.2s ease, color 0.2s ease, transform 0.2s ease;
-  }
-
-  .nav-sublink::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    border-radius: 999px;
-    background: var(--color-accent);
-    opacity: 0.7;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-  }
-
-  .nav-sublink:hover {
-    opacity: 1;
-    color: var(--color-accent);
-    transform: translateX(2px);
-  }
-
-  .nav-sublink:hover::before {
-    transform: scale(1.4);
-    opacity: 1;
-  }
 </style>
 
 <script>
-  function initNavGroups() {
-    document.querySelectorAll('.nav-group-toggle').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const group = btn.closest('.nav-group');
-        if (!group) return;
-        const isOpen = group.classList.toggle('open');
-        btn.setAttribute('aria-expanded', String(isOpen));
+  function initTabs() {
+    const links = Array.from(document.querySelectorAll('[data-section-link]'));
+    const panels = Array.from(document.querySelectorAll('[data-tab-panel]'));
+
+    if (!links.length || !panels.length) return;
+
+    const activate = (id) => {
+      panels.forEach((panel) => {
+        panel.hidden = panel.id !== id;
+      });
+
+      links.forEach((link) => {
+        const targetId = (link.getAttribute('href') || '').split('#')[1] || '';
+        const isActive = targetId === id;
+        link.classList.toggle('nav-link-active', isActive);
+        if (isActive) link.setAttribute('aria-current', 'true');
+        else link.removeAttribute('aria-current');
+      });
+    };
+
+    links.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const targetId = (link.getAttribute('href') || '').split('#')[1] || '';
+        if (!targetId) return;
+        event.preventDefault();
+        activate(targetId);
+        history.replaceState(null, '', `#${targetId}`);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
+
+    const hash = window.location.hash.replace('#', '');
+    const initialId = panels.some((panel) => panel.id === hash) ? hash : panels[0].id;
+    activate(initialId);
   }
 
-  initNavGroups();
-  document.addEventListener('astro:page-load', initNavGroups);
+  initTabs();
+  document.addEventListener('astro:page-load', initTabs);
 </script>

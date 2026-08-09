@@ -39,6 +39,28 @@ export const site = {
       },
     ],
   },
+
+  evidences: {
+    modelado: {
+      title: 'Modelado',
+      paragraphs: [
+        'Aquí puedes agregar la evidencia relacionada con el modelado de datos: diagramas entidad-relación, modelos conceptuales, lógicos o físicos que hayas desarrollado.',
+      ],
+    },
+    normalizacion: {
+      title: 'Normalización',
+      paragraphs: [
+        'Aquí puedes agregar la evidencia relacionada con la normalización de bases de datos: formas normales aplicadas, ejemplos y justificación del proceso.',
+      ],
+    },
+    sql: {
+      title: 'SQL',
+      paragraphs: [
+        'Aquí puedes agregar la evidencia relacionada con SQL: consultas, scripts de creación de tablas, procedimientos almacenados u otros ejercicios prácticos.',
+      ],
+    },
+  },
+
   experiences: [],
   featuredProjects: [],
   projectArchivePage: {
