@@ -5,11 +5,10 @@ import Experience from '../components/Experience.astro';
 import Modelado from '../components/Modelado.astro';
 import Normalizacion from '../components/Normalizacion.astro';
 import Sql from '../components/Sql.astro';
-import FeaturedProjects from '../components/FeaturedProjects.astro';
+import Proyecto from '../components/Proyecto.astro';
 import Footer from '../components/Footer.astro';
 import { site } from '../../data/site';
 
-const projects = site.featuredProjects;
 ---
 
 <Layout title={site.meta.title} description={site.meta.description}>
@@ -31,7 +30,7 @@ const projects = site.featuredProjects;
   </div>
 
   <div id="proyecto" data-tab-panel hidden>
-    <FeaturedProjects projects={projects} compact />
+    <Proyecto />
   </div>
 
   <Footer />

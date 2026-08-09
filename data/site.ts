@@ -59,6 +59,12 @@ export const site = {
         'SQL',
       ],
     },
+    proyecto: {
+      title: 'Proyecto',
+      paragraphs: [
+        'Proyecto',
+      ],
+    },
   },
 
   experiences: [],
