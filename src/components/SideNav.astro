@@ -23,7 +23,7 @@ import SiteIntro from './SiteIntro.astro';
           {
             navLinks.map((link, index) => (
               <li>
-                
+                <a
                   href={`${import.meta.env.BASE_URL}${link.href}`}
                   class="nav-link"
                   data-section-link
