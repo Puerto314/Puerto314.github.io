@@ -7,7 +7,7 @@ export const navLinks = [
 ] as const;
 
 export const presentationVideo = {
-  href: 'public/VideoBases.mp4',
+  href: '/VideoBases.mp4',
   
   label: 'Video de presentación',
 } as const;

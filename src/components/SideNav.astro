@@ -10,7 +10,7 @@ import SiteIntro from './SiteIntro.astro';
       <SiteIntro variant="sidebar" />
 
       <a
-        href={presentationVideo.href}
+        href={`${import.meta.env.BASE_URL}${presentationVideo.href.replace(/^\//, '')}`}
         target="_blank"
         rel="noreferrer"
         class="inline-flex items-center justify-center rounded-full border border-accent/60 px-5 py-2 text-sm font-semibold text-accent transition hover:bg-accent/10"
