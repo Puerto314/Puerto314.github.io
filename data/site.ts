@@ -45,8 +45,9 @@ export const site = {
       title: 'Modelado',
       paragraphs: [
         'En esta sección, se encuentran las evidencias de los talleres sobre MER, MER extendido, y Modelo Relacional',
-        '/MER.png'
       ],
+      imageAlt: 'Evidencia de modelado',
+      imageSrc: '/MER.png',
     },
     normalizacion: {
       title: 'Normalización',
