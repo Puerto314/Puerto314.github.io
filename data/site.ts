@@ -44,25 +44,25 @@ export const site = {
     modelado: {
       title: 'Modelado',
       paragraphs: [
-        'Modelado',
+        'En esta sección, se encuentran las evidencias de los talleres sobre MER, MER extendido, y Modelo Relacional',
       ],
     },
     normalizacion: {
       title: 'Normalización',
       paragraphs: [
-        'Normalización',
+        'En esta sección, se encuentran las evidencias de los talleres sobre modelización',
       ],
     },
     sql: {
       title: 'SQL',
       paragraphs: [
-        'SQL',
+        'En esta sección, se encuentran las evidencias de los trabajos y talleres sobre SQL',
       ],
     },
     proyecto: {
       title: 'Proyecto',
       paragraphs: [
-        'Proyecto',
+        'En esta sección, se encuentran las evidencias de los entregables del proyecto final',
       ],
     },
   },
