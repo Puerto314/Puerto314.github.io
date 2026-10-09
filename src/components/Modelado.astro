@@ -10,16 +10,21 @@ const { title, paragraphs, imageSrc, imageAlt } = site.evidences.modelado;
   aria-labelledby="modelado-heading"
 >
   <h2 id="modelado-heading" class="section-heading">{title}</h2>
-  <div class="reveal-content mt-8 grid items-start gap-10">
-    {imageSrc && (
-      <img src={imageSrc} alt={imageAlt} class="rounded-lg shadow-md" />
-    )}
-
-    <div class="space-y-8 body-copy">
+  <div class="reveal-content mt-8 space-y-8">
+    <!-- Párrafos arriba -->
+    <div class="body-copy">
       {paragraphs.map((p) => (
         <p>{p}</p>
       ))}
     </div>
+
+    <!-- Alt (descripción) en medio -->
+    {imageAlt && <p class="text-sm text-gray-600 italic">{imageAlt}</p>}
+
+    <!-- Imagen abajo -->
+    {imageSrc && (
+      <img src={imageSrc} alt={imageAlt} class="rounded-lg shadow-md w-full" />
+    )}
   </div>
 </section>
 
