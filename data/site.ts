@@ -65,6 +65,12 @@ export const site = {
           description:
             'En este link, se encuentran los 3 modelos que corresponden a un contexto de aerolíneas, vuelos y aviación.',
         },
+        {
+          title: 'Reducción a tablas de una biblioteca',
+          url: 'https://n9.cl/wsn7i',
+          description:
+            'En este link se encuentra la reducción a tablas de un modelo ER de una biblioteca.',
+        },
       ],
     },
     normalizacion: {
@@ -98,12 +104,6 @@ export const site = {
           url: 'https://n9.cl/xmqkc',
           description:
             'En este link, se encuentra el segundo draw con el model ER, el extendido, y la reducción a tablas de los modelos del proyecto final.',
-        },
-        {
-          title: 'Reducción a tablas',
-          url: 'https://n9.cl/wsn7i',
-          description:
-            'En este link se encuentra la reducción a tablas de un modelo ER de una biblioteca.',
         },
       ],
     },
