@@ -2,7 +2,18 @@
 import { site } from '@data/site';
 
 const section = site.evidences.normalizacion;
-const links = section.links ?? [];
+const links = [
+  {
+    title: 'Taller de normalización (CSV)',
+    url: '/TallerNormalizacion.csv',
+    description: 'Descarga el archivo CSV del taller de normalización.',
+  },
+  {
+    title: 'Taller de normalización (PDF)',
+    url: '/TallerNormalizacion.pdf',
+    description: 'Descarga el archivo PDF del taller de normalización.',
+  },
+];
 ---
 
 <section
@@ -19,24 +30,22 @@ const links = section.links ?? [];
       ))}
     </div>
 
-    {links.length > 0 && (
-      <div class="link-stack">
-        {links.map((link) => (
-          <div class="link-item">
-            <h3 class="link-title">{link.title}</h3>
-            <p class="link-description">{link.description}</p>
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-block text-blue-600 underline hover:text-blue-800"
-            >
-              {link.title}
-            </a>
-          </div>
-        ))}
-      </div>
-    )}
+    <div class="link-stack">
+      {links.map((link) => (
+        <div class="link-item">
+          <h3 class="link-title">{link.title}</h3>
+          <p class="link-description">{link.description}</p>
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block text-blue-600 underline hover:text-blue-800"
+          >
+            {link.title}
+          </a>
+        </div>
+      ))}
+    </div>
   </div>
 </section>
 
