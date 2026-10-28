@@ -78,7 +78,20 @@ export const site = {
       paragraphs: [
         'En esta sección, se encuentran las evidencias de los talleres sobre modelización.',
       ],
-      links: [],
+      links: [
+        {
+          title: 'CSV de normalización',
+          url: 'https://puerto314.github.io/TallerNormalizacion.csv',
+          description:
+            'Abre el archivo CSV del taller de normalización.',
+        },
+        {
+          title: 'PDF de normalización',
+          url: 'https://puerto314.github.io/TallerNormalizacion.pdf',
+          description:
+            'Abre el documento PDF del taller de normalización.',
+        },
+      ],
     },
     sql: {
       title: 'SQL',
