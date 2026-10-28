@@ -44,75 +44,66 @@ export const site = {
     modelado: {
       title: 'Modelado',
       paragraphs: [
-        'En esta sección, se encuentran las evidencias de los talleres sobre MER, MER extendido, y Modelo Relacional',
+        'En esta sección, se encuentran las evidencias de los talleres sobre MER, MER extendido y reducción a tablas.',
       ],
       links: [
         {
-          title: 'Ver diagrama MER',
-          url: 'https://www.youtube.com/watch?v=QX8DgRrC4Zc',
-          description: 'Este link lleva a ver el diagrama hecho en draw.',
+          title: 'Modelo ER Peter Chen',
+          url: 'https://n9.cl/6t4v9',
+          description:
+            'En este link, se encuentra el primero modelo ER sobre jugadores, clubes de futbol, y tabla de clasificación.',
         },
         {
-          title: 'Ver diagrama de reducción',
-          url: 'https://www.youtube.com/watch?v=5l2QnK6CjQk',
-          description: 'Este link lleva a ver el diagrama hecho en draw.',
+          title: 'Reducción a tablas',
+          url: 'https://n9.cl/ppz8q',
+          description:
+            'En este link, se encuentra el modelo de reducción a tablas de un modelo ER diseñado en clase.',
+        },
+        {
+          title: 'Modelo ER, ER extendido y reducción a tablas',
+          url: 'https://n9.cl/7n082t',
+          description:
+            'En este link, se encuentran los 3 modelos que corresponden a un contexto de aerolíneas, vuelos y aviación.',
         },
       ],
-      linkText: 'Ver diagrama MER',
-      linkUrl: 'https://www.youtube.com/watch?v=QX8DgRrC4Zc',
-      linkDescription: 'Este link lleva a ver el diagrama hecho en draw.',
     },
     normalizacion: {
       title: 'Normalización',
       paragraphs: [
-        'En esta sección, se encuentran las evidencias de los talleres sobre modelización',
+        'En esta sección, se encuentran las evidencias de los talleres sobre modelización.',
       ],
-      links: [
-        {
-          title: 'Ver explicación de normalización',
-          url: 'https://www.youtube.com/watch?v=7m9o1T5HkXs',
-          description: 'Este link lleva a ver la explicación de normalización en YouTube.',
-        },
-        {
-          title: 'Ver ejemplo de normalización',
-          url: 'https://www.youtube.com/watch?v=Z5JqfS8p8aQ',
-          description: 'Este link lleva a ver un ejemplo práctico de normalización en YouTube.',
-        },
-      ],
+      links: [],
     },
     sql: {
       title: 'SQL',
       paragraphs: [
-        'En esta sección, se encuentran las evidencias de los trabajos y talleres sobre SQL',
+        'En esta sección, se encuentran las evidencias de los trabajos y talleres sobre SQL.',
       ],
-      links: [
-        {
-          title: 'Ver video de SQL',
-          url: 'https://www.youtube.com/watch?v=F7I8dM3W1Ak',
-          description: 'Este link lleva a ver la explicación de SQL en YouTube.',
-        },
-        {
-          title: 'Ver práctica de consultas SQL',
-          url: 'https://www.youtube.com/watch?v=H7Wv8yY3mUM',
-          description: 'Este link lleva a ver una práctica de consultas SQL en YouTube.',
-        },
-      ],
+      links: [],
     },
     proyecto: {
       title: 'Proyecto',
       paragraphs: [
-        'En esta sección, se encuentran las evidencias de los entregables del proyecto final',
+        'En esta sección, se encuentran las evidencias de los entregables del proyecto final.',
       ],
       links: [
         {
-          title: 'Ver presentación del proyecto',
-          url: 'https://www.youtube.com/watch?v=4d5E3u7NxxU',
-          description: 'Este link lleva a ver la presentación del proyecto en YouTube.',
+          title: 'Primera versión del proyecto',
+          url: 'https://n9.cl/6um4z',
+          description:
+            'En este link se encuentra el primer draw de los modelos del proyecto (primeras versiones).',
         },
         {
-          title: 'Ver resumen del proyecto',
-          url: 'https://www.youtube.com/watch?v=Qm2wR5v3sC8',
-          description: 'Este link lleva a ver el resumen del proyecto en YouTube.',
+          title: 'Segundo draw proyecto',
+          url: 'https://n9.cl/xmqkc',
+          description:
+            'En este link, se encuentra el segundo draw con el model ER, el extendido, y la reducción a tablas de los modelos del proyecto final.',
+        },
+        {
+          title: 'Reducción a tablas',
+          url: 'https://n9.cl/wsn7i',
+          description:
+            'En este link se encuentra la reducción a tablas de un modelo ER de una biblioteca.',
         },
       ],
     },
