@@ -46,19 +46,38 @@ export const site = {
       paragraphs: [
         'En esta sección, se encuentran las evidencias de los talleres sobre MER, MER extendido, y Modelo Relacional',
       ],
+      links: [
+        {
+          title: 'Ver diagrama MER',
+          url: 'https://www.youtube.com/watch?v=QX8DgRrC4Zc',
+          description: 'Este link lleva a ver el diagrama hecho en draw.',
+        },
+        {
+          title: 'Ver diagrama de reducción',
+          url: 'https://www.youtube.com/watch?v=5l2QnK6CjQk',
+          description: 'Este link lleva a ver el diagrama hecho en draw.',
+        },
+      ],
       linkText: 'Ver diagrama MER',
-      linkUrl:
-        'https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=ENVIARDB.drawio&dark=auto#R%3Cmxfile%3E%3Cdiagram%20name%3D%22P%C3%A1gina-1%22%20id%3D%22c3Qz7kE9RkBiAWYhQH%22%3E7V1bd9pIEv41foSjbt0ffcGJ5zhxxrnuvvgQUDAzGDGySOz59SuCJFB1IxqpSi3Q5iVWgwRU9Vf3qj4zL59e3kTDxeO7cBzMzrgxfjkzr844575nJf%2BtVl7XK4x5znplEk3H6dpm4eP03yBdNNLV5XQcPBfeGIfhLJ4uioujcD4PRnFhbRhF4a%2Fi236Es%2BKnLoaTQFj4OBrOxNWv03H8uF71uLtZfxtMJ4%2FZJzPHX7%2FyNMzenP6S58fhOPy1tWQOzszLKAzj9V9PL5fBbEW9jC7r%2B653vJp%2FsSiYxyo3vMTX724u3i78Dy%2FuvX%2F7x8UfF%2FNekXrD79nPNsSnp299jl%2BzN02icLlYr%2F4czpbparoQRHHwsnVn%2BqXeBOFTEEevyVset%2BjGzfQTf22IzG1zvZY%2BxsqInu2l5B0po1MmT%2FKHb%2BiQ%2FJGSQk6W8J%2Fl%2Bf3savRi%2Bbd%2Fvpl8Hn55GPTs9McGY2F3bAhSRtDncBmNgpJPMH2BnKsP%2B5hehlH8GE7C%2BXA22KxeJPSej4PVFzeSq817bsNwkSyyZPGvII5fUxgNl3GYLD3GT7P01eS7R6%2Ff0vt%2FX%2FxnddG3s8url%2B0Xr17zq%2FH5CkzJ5TycB%2BuV6%2BmKqL9fT4E5jCZBXEZWQ74TomA2jKc%2Fi6RGZ2pGcmUebljz63EaBx8Xw98s%2FZWIuiJZh7PpZJ78PUqeG0Q5PbZAMbi6%2BXR3XwkalogMZhhUG9%2Bm3vjZz2l64%2B%2FfwDX2ZXrrh3Ca0CgXWCz7ranAsoG4WuMlvQkwLv8W1XlpSYS44n5Pnp4o2BWZau%2F8efj0PQqqKQVx5ztGQSUwv0hhi0whOOS4sLuDC7PINQ6kGTUubA24%2BBHO44yXlgwn0%2FFDMJ7GYVQJKhLzyXGKUPGK1hMZUixypDjdQQrQIL7ZLFKcNmiQxBmbVVMgMlSUKxDXo4KFSQ4Lr7OwYGbDlpXXBlzMwgQZ0%2FFwTIUND%2FrbZF4HJweHJne7DeBwGwZHdTcbERzfh1E0DZtChkOGjFb4cMtohkZJaJVaBUpyjMiGlEA1tmXyk%2BMiyWQUfY6j8O%2FgMpwlJnyO9x8J2MGSQO4VUaeJKD9PX3iajscS%2BSNwJfki54xqh5tFswjBW5BzJZX82gPQJhNpYjJeIErPtoFozRfQga%2BqADMCYgYrzz9TxCqznFBGVPz4buWgfU7EfWaESOwTsSKSDxi%2Bbr1hsbIOnkuMDM77RlFGMLtvcH%2FzzzUBR9efsfN5xYc1GxLi1dHWbjWLDzKDHGQdCu%2BAXd9wgkA1uoO66%2FcGQsfhaPmUvBvPeHcKRLaoVDavHOJRhkarksa8oazxDq43oOD8ok7yQYGFwi0G2FVbOhALxap%2BDa3uGi5WDxuH1axvWaaviFrmkVnaqi42LQHXeVI88gFPBRpUeAYBJ5d6TBLc6IhFwBo2CVgNv5NAmlQLbyjAgc5vd%2BnhoKmCRm4FuHutgJdp%2FC17SPL3VsVZcrW5aXVxqpYDLM081HIQ7khuAd62st0hPssoypweBMd6R9I53z45ZDqUGgUKxG82kKKaGG3ClkJXHulDimEvMrvUpHcneXdDLaxhYHAtwRYBGWQ1A1n%2Bjs7PoDesTKuzcOAwg00Mh4zUmuFAUyWQ0ZRONVSuRlbHQofKkSEWGq5HNlXrkWmxQFJmmZEUozDf%2BD4ZuX9%2B%2BMpfe8bXN3PTvr12ez5q0lf6EV53oJCLrIxvdFZSKalblpIahePpBD0ftaMEmbDYRkVtSCoq5Q%2FThIqqUSiciNK6h7AG7uox0DsBBh7KB%2BmXN7WyQSKlxBTF8%2BNwsfozegyfvi%2BT73CxCKJp8g1WMidb%2FbBZqq%2FBKwkoScmWD%2BIdMHguaAU8yqZOnvZywEwRbbejG1aBLHmpat6E4JEJ7gPa9EvpSkMsyRbKiYVOC1P1J9N0cT%2Fc3lxgEQmWRjIyomUfXsFKVlUnpz7QoH1qSHmegQQKlI2sz9%2FnlRCyv3SLTL5W7lnNBetea8v8PzwattKUNYWoHBHDKvh93eVDJdDol2WBtdtiTDYbyCjOBjINs28XzTGU3gwpZVTlbvYFME2QxPy4v0M3QNBJxCpHqHOi7ZOouspgdESomQN2N9zbeHG5UlpX2fKYZWFnl%2BbZBasWiVOYJgM6ZzEqxeXkrDxlSR0dHaqZFNBBF7UupbVmdMTTeDlrChsYuU05MSvb4urY4Hqwkdri%2BQVZG8Vuq6Uu%2BA4uhlxhE%2FQJ7iuGlNyC20ZRuik0g3gRBaOKFQmHgxilK0BOzcrVOuoo1uRRa6lQgOXrzeo3VU8aFRpaAk35%2BAOXCBi2BAennDsyPOiXW2Smg9LwUtV4tq3JgM4Cdn1nYxisDQVDwVJIrra2RZvMh3qcxaxc0ByJ7RfZ2ozxZ9dthanFPicVL60MJYpZOKBryeKItiv%2B%2FFL6IQ95Icll4m%2BeyhV%2BOdn2yvru9AfBeZfNWpK2an%2BQZMcfmSWZEhhjMpyclKpZiGZJST29g1DOVK6RUJczmmok2jc%2FyoeBCBvwr6xhFQ59bzbamx3wgmKLOl0sC1jbPbqMUVcF50fCP0bNP5K2%2BnpiWhKMOuEASo8JoyvI%2FBEHM37iaGqm1CrZtAZJHMwgiS72ackfQ4S5DVsUkmbYExZpNBJN2k%2BmFGxv8Xjn95VYsH%2B8swntbwujd0HKAlslEyiRStKHSVxZfaFbdlo6Rc69ih1nbeQetUUg%2Fc1NlUCXEbwjekWSa3QxjiyRA6NiFGD3JukaMAydyFByIjGKtR8uBx%2Bx9jvMVNmwA5FuuzMlE%2FXIQvS7yOjRkRHTGGKtbeBGd9FsaK%2B6PlniqpTW%2Bvb%2F%2BGEUPMfDpjDgYlTpyElZMUxRKpe0eQT%2BYR4BSn0OiaFZKY0j4NIzSxI5aGBMnZJWlpPAzjTPatAqVaqVKKXpfsSdbA5T3N3Fzd0TpkZTKx1Jir%2BceYi2a2K3fjp%2FuLx79%2BH%2BvBI4qIqE5J6uilKpt%2FG5pE1Y%2F8av3FWiqFYYStuIxor2Ul5WQdbxGnlC4B3hsGO5GqqYYi8JFLQNdySo8Cy%2FvzXT3Yd2A12lSynlOxI%2FdJzG7LTs0BTtFqwrMWB5UWpYUFQbZH3RXKUAoZSge%2FPaXJM0qail29Fu1mw6XAaCcqY3pZyRB7mUa2equS5cpcFamd5Hjh0VC9iwaVDmGH3DMJKd4XjM9K1sCFXGfqvvW4y5juUatucZ4EDPHWeyaMRyGfGqba7MsljXZzwl33S6gqyZXIzD5Vpn7irXOMig%2BDS4HVzfvb97GFzdYB59bBYNjNygwo%2BpZuq%2FZTIzDmZB8iay0clAZGIYJnKqdavo1OLgOClGR1mlxGJLS7Ten5nnDG1vg%2BQurEpEObNOyoNM82j3RvJ2tG13xCpi3gNRWWaSSVVH5QSmUorud0e6cwITjG1YRW%2Bbw9gwtZchOZCpnJeYwfXbm8H7TwM0Q4Msrp7NmKWEQCvj6iQQEObvNDzGTznsLdnzmGP8qM6Kzh7iAvOFzHrJJitTwqM7venCjLlmm9O5pDldAzqIDgLPHgJO%2BME4bEZOJJUcUE1odKcUQZzc1jA2VEsRmtEc1Zyuw9GRh6%2Fw4cHJ4dGhxCmEBxyKTowOWaJUm%2Bagw0ZxKCfZkX6mSs9RTWh0aDoy1BwND0c2D2YeCTbIDj7epTnIDCulw19rwoPrgYc80ddQ7%2F46IFQDf%2FUO8%2BGtgAnNgcg7MEKoQlT6bGpipEPjh4EKEWoTqFWIJPumARskByTvggbGZG45jeiTGmZ3khoCNBo2rmokMY5xCOAOtCCokfDv2UVwM%2Frv1Y%2Brv26iyd3i3%2Ft7Wf98kykikt7hXek2PN2rWvEjodrJVFCASmIyYrfmkDbfFlP3FlByQuqeYSBXvrcqVxLLzjA4Jd9nR%2F1YXefn9601p4DuORjGEkQY2CYHzAyFG69yOWWxqMF1TSr9L9%2BsNXb18ctaPO1fBop61G2sdhXNUABFq3l5VXa2Gsw8odG76mBWOUt0DwYgPuVB%2FqPrVqrXs0U6NsYQqgLCYVNK00dQxhWd375DkyTwYA0GrGKPTJRUPS%2BmnaKEH%2BPYwUoGIfeMvgHO%2FnOtfG2XVSa7zWF7bzO517f5vttoZphkM19xdqimdGa%2BQy3TLfoths6jqhrL5MjNRoZpxzjdiaVymKn2HDCggNibciT2fqNDvkbheDqhCppyYfqDbe5mUb3GCcypsY6m%2BnC9Xad6TXlHUiiOiQRh58%2BXT0FEdewtd4Bt4MHpgXg%2BrEpBuPLkE90nFVqmeZjlWVGno6sSy2V93zE2%2F4q91cyA0w3J26AxzT23Q6UHsAvSa3gGjtutzt88CEc%2FC9fFnIXrdvG0Gb1%2BjtutcJ8Lw310fceuStOlbpdfR3x7veXQlYwLB38xxyqk9YAbuiNZiKVyPJUKLVXB6ImpqVO1FVxWOj3PcP0yphLbERkftMUWqGuyXFjcYWAcfSunJT8C%2Bcg4DIl6Vlv9p0PD9Iku7HPoUpmrgVWAt2UVGcmGKc6%2Fkj1vMwBLSQTv%2BKYbPxBE%2Bxn3%2BiaYrEXuCqKK9xO3e0t8Ml12r6dk99Y2Y89v351fDqodAKeQjO3B6eaEnp5%2FiLzeu%2BO7kxDpccEbh11l1FYLcUZE2PXUbXo9U8iC0JkpTQfRSZu3RMr5ZA6wj6oiuzNARRQYfsPzPj3JDBXSPU%2FZlCURFmSJoyzahLPl9aZMV3Y9cH5Mt6GCkBKTrWkvqccdv%2B%2BDUVS%2BVTggSe2mZk5VMjBzl353zg%2FvMR92ARTYx4WB%2BeQuJqbBrYuT8kgzfvUjjcSopwy6lVrpcTALlNK0TD9Jf8OcSBZuOoAu2SicnZIEr2pRNoi5lIJaB7VjR0csuCPJ6MwwtSwzujMCTywPhUKCXK1KhuA1msMhPARZrA4la85g2bmGJ1IkZ3OQ6GnI1Qn%2FWZ7fz65GL5Z%2F%2B%2Bebyefhl4dBOrBZl%2BHCuJLlQlpCHUUBWY5TSFLR6YnDjpwg17yXd%2Ff3g7sH7MHloNnUgecJ000IYEpz1JQVsSlaRaeqiMXD2GEInVoRy0aMHG95unD2uufQbXql%2BGwHj1txTeCCmi6daFeyI1vKhOSLnFdrEd7PBA9We1sm1WinisXH0mdpsUBXltD18Gk6W9HqbTD7GazYmZlI67sYT6%2BzzTAOfgyXs1iX5shLDPLzL%2BAESDzNUcYpfQ4c7QHPgn1qY8TRpJSsaDxJn6XJdJLXMO1t8GsAeMDP2zmargE3r4xhjZlf5LWrAm4wpjdLSadkf51MZN%2BzgVXlkAmkzHQ4WqOqWjBbYbSsC3hgY0T25DxQqsPuIA96DGa4CJmgZOS0lAnvCb0LBl08B3YB4%2FHg2E81peJBDyoEFx7yhccDJSulpTygFUZiJScZE5QKiFvKBEogCKWFLsaMYDkPlOqQO8gDB57Z4sCzcfB4cMxxV9KQHwx%2BO3Sy6NjDrlQKwXNgWhOjzNk3rwfz6c%2F7lz8%2Bf4nj0Zf3l%2Fc%2FqoaN5IcfdOjgYOaV9TZzgWHU504Qt7aoBFLjYBYk7yM7Y4IzgcgI2kGKCrX2Zbx4GjbpXIF0YNo6wwj7SEmnMudfIlDK2KCvZZwdWOpM1zGh6UAAxuCcfranX0K8I5vthdUsId0qFQccSp%2BluVmnmP44mgMnakkNJfV1MlF424QQISsj9yvm1dsEjPINngPn0JNaXqbxt62%2Ft%2B5KrjY3rS6ye1TBZNLMRcrnuOb7BhYmqY7h6PnCk7BKxpLLKAzj7bcnyHt8F46D1Tv%2BBw%3D%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E',
+      linkUrl: 'https://www.youtube.com/watch?v=QX8DgRrC4Zc',
       linkDescription: 'Este link lleva a ver el diagrama hecho en draw.',
-      reductionLinkText: 'Ver diagrama de reducción',
-      reductionLinkUrl:
-        'https://app.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Taller1-BDD1.drawio&dark=auto#R%3Cmxfile%3E%3Cdiagram%20name%3D%22P%C3%A1gina-1%22%20id%3D%22IK51A8TkPdNhFsJUbr7B%22%3E7V1bd9pIEv41foSjbt0ffcGJ5zhxxrnuvvgQUDAzGDGySOz59SuCJFB1IxqpSi3Q5iVWgwRU9Vf3qj4zL59e3kTDxeO7cBzMzrgxfjkzr844575nJf%2BtVl7XK4x5znplEk3H6dpm4eP03yBdNNLV5XQcPBfeGIfhLJ4uioujcD4PRnFhbRhF4a%2Fi236Es%2BKnLoaTQFj4OBrOxNWv03H8uF71uLtZfxtMJ4%2FZJzPHX7%2FyNMzenP6S58fhOPy1tWQOzszLKAzj9V9PL5fBbEW9jC7r%2B653vJp%2FsSiYxyo3vMTX724u3i78Dy%2FuvX%2F7x8UfF%2FNekXrD79nPNsSnp299jl%2BzN02icLlYr%2F4czpbparoQRHHwsnVn%2BqXeBOFTEEevyVset%2BjGzfQTf22IzG1zvZY%2BxsqInu2l5B0po1MmT%2FKHb%2BiQ%2FJGSQk6W8J%2Fl%2Bf3savRi%2Bbd%2Fvpl8Hn55GPTs9McGY2F3bAhSRtDncBmNgpJPMH2BnKsP%2B5hehlH8GE7C%2BXA22KxeJPSej4PVFzeSq817bsNwkSyyZPGvII5fUxgNl3GYLD3GT7P01eS7R6%2Ff0vt%2FX%2FxnddG3s8url%2B0Xr17zq%2FH5CkzJ5TycB%2BuV6%2BmKqL9fT4E5jCZBXEZWQ74TomA2jKc%2Fi6RGZ2pGcmUebljz63EaBx8Xw98s%2FZWIuiJZh7PpZJ78PUqeG0Q5PbZAMbi6%2BXR3XwkalogMZhhUG9%2Bm3vjZz2l64%2B%2FfwDX2ZXrrh3Ca0CgXWCz7ranAsoG4WuMlvQkwLv8W1XlpSYS44n5Pnp4o2BWZau%2F8efj0PQqqKQVx5ztGQSUwv0hhi0whOOS4sLuDC7PINQ6kGTUubA24%2BBHO44yXlgwn0%2FFDMJ7GYVQJKhLzyXGKUPGK1hMZUixypDjdQQrQIL7ZLFKcNmiQxBmbVVMgMlSUKxDXo4KFSQ4Lr7OwYGbDlpXXBlzMwgQZ0%2FFwTIUND%2FrbZF4HJweHJne7DeBwGwZHdTcbERzfh1E0DZtChkOGjFb4cMtohkZJaJVaBUpyjMiGlEA1tmXyk%2BMiyWQUfY6j8O%2FgMpwlJnyO9x8J2MGSQO4VUaeJKD9PX3iajscS%2BSNwJfki54xqh5tFswjBW5BzJZX82gPQJhNpYjJeIErPtoFozRfQga%2BqADMCYgYrzz9TxCqznFBGVPz4buWgfU7EfWaESOwTsSKSDxi%2Bbr1hsbIOnkuMDM77RlFGMLtvcH%2FzzzUBR9efsfN5xYc1GxLi1dHWbjWLDzKDHGQdCu%2BAXd9wgkA1uoO66%2FcGQsfhaPmUvBvPeHcKRLaoVDavHOJRhkarksa8oazxDq43oOD8ok7yQYGFwi0G2FVbOhALxap%2BDa3uGi5WDxuH1axvWaaviFrmkVnaqi42LQHXeVI88gFPBRpUeAYBJ5d6TBLc6IhFwBo2CVgNv5NAmlQLbyjAgc5vd%2BnhoKmCRm4FuHutgJdp%2FC17SPL3VsVZcrW5aXVxqpYDLM081HIQ7khuAd62st0hPssoypweBMd6R9I53z45ZDqUGgUKxG82kKKaGG3ClkJXHulDimEvMrvUpHcneXdDLaxhYHAtwRYBGWQ1A1n%2Bjs7PoDesTKuzcOAwg00Mh4zUmuFAUyWQ0ZRONVSuRlbHQofKkSEWGq5HNlXrkWmxQFJmmZEUozDf%2BD4ZuX9%2B%2BMpfe8bXN3PTvr12ez5q0lf6EV53oJCLrIxvdFZSKalblpIahePpBD0ftaMEmbDYRkVtSCoq5Q%2FThIqqUSiciNK6h7AG7uox0DsBBh7KB%2BmXN7WyQSKlxBTF8%2BNwsfozegyfvi%2BT73CxCKJp8g1WMidb%2FbBZqq%2FBKwkoScmWD%2BIdMHguaAU8yqZOnvZywEwRbbejG1aBLHmpat6E4JEJ7gPa9EvpSkMsyRbKiYVOC1P1J9N0cT%2Fc3lxgEQmWRjIyomUfXsFKVlUnpz7QoH1qSHmegQQKlI2sz9%2FnlRCyv3SLTL5W7lnNBetea8v8PzwattKUNYWoHBHDKvh93eVDJdDol2WBtdtiTDYbyCjOBjINs28XzTGU3gwpZVTlbvYFME2QxPy4v0M3QNBJxCpHqHOi7ZOouspgdESomQN2N9zbeHG5UlpX2fKYZWFnl%2BbZBasWiVOYJgM6ZzEqxeXkrDxlSR0dHaqZFNBBF7UupbVmdMTTeDlrChsYuU05MSvb4urY4Hqwkdri%2BQVZG8Vuq6Uu%2BA4uhlxhE%2FQJ7iuGlNyC20ZRuik0g3gRBaOKFQmHgxilK0BOzcrVOuoo1uRRa6lQgOXrzeo3VU8aFRpaAk35%2BAOXCBi2BAennDsyPOiXW2Smg9LwUtV4tq3JgM4Cdn1nYxisDQVDwVJIrra2RZvMh3qcxaxc0ByJ7RfZ2ozxZ9dthanFPicVL60MJYpZOKBryeKItiv%2B%2FFL6IQ95Icll4m%2BeyhV%2BOdn2yvru9AfBeZfNWpK2an%2BQZMcfmSWZEhhjMpyclKpZiGZJST29g1DOVK6RUJczmmok2jc%2FyoeBCBvwr6xhFQ59bzbamx3wgmKLOl0sC1jbPbqMUVcF50fCP0bNP5K2%2BnpiWhKMOuEASo8JoyvI%2FBEHM37iaGqm1CrZtAZJHMwgiS72ackfQ4S5DVsUkmbYExZpNBJN2k%2BmFGxv8Xjn95VYsH%2B8swntbwujd0HKAlslEyiRStKHSVxZfaFbdlo6Rc69ih1nbeQetUUg%2Fc1NlUCXEbwjekWSa3QxjiyRA6NiFGD3JukaMAydyFByIjGKtR8uBx%2Bx9jvMVNmwA5FuuzMlE%2FXIQvS7yOjRkRHTGGKtbeBGd9FsaK%2B6PlniqpTW%2Bvb%2F%2BGEUPMfDpjDgYlTpyElZMUxRKpe0eQT%2BYR4BSn0OiaFZKY0j4NIzSxI5aGBMnZJWlpPAzjTPatAqVaqVKKXpfsSdbA5T3N3Fzd0TpkZTKx1Jir%2BceYi2a2K3fjp%2FuLx79%2BH%2BvBI4qIqE5J6uilKpt%2FG5pE1Y%2F8av3FWiqFYYStuIxor2Ul5WQdbxGnlC4B3hsGO5GqqYYi8JFLQNdySo8Cy%2FvzXT3Yd2A12lSynlOxI%2FdJzG7LTs0BTtFqwrMWB5UWpYUFQbZH3RXKUAoZSge%2FPaXJM0qail29Fu1mw6XAaCcqY3pZyRB7mUa2equS5cpcFamd5Hjh0VC9iwaVDmGH3DMJKd4XjM9K1sCFXGfqvvW4y5juUatucZ4EDPHWeyaMRyGfGqba7MsljXZzwl33S6gqyZXIzD5Vpn7irXOMig%2BDS4HVzfvb97GFzdYB59bBYNjNygwo%2BpZuq%2FZTIzDmZB8iay0clAZGIYJnKqdavo1OLgOClGR1mlxGJLS7Ten5nnDG1vg%2BQurEpEObNOyoNM82j3RvJ2tG13xCpi3gNRWWaSSVVH5QSmUorud0e6cwITjG1YRW%2Bbw9gwtZchOZCpnJeYwfXbm8H7TwM0Q4Msrp7NmKWEQCvj6iQQEObvNDzGTznsLdnzmGP8qM6Kzh7iAvOFzHrJJitTwqM7venCjLlmm9O5pDldAzqIDgLPHgJO%2BME4bEZOJJUcUE1odKcUQZzc1jA2VEsRmtEc1Zyuw9GRh6%2Fw4cHJ4dGhxCmEBxyKTowOWaJUm%2Bagw0ZxKCfZkX6mSs9RTWh0aDoy1BwND0c2D2YeCTbIDj7epTnIDCulw19rwoPrgYc80ddQ7%2F46IFQDf%2FUO8%2BGtgAnNgcg7MEKoQlT6bGpipEPjh4EKEWoTqFWIJPumARskByTvggbGZG45jeiTGmZ3khoCNBo2rmokMY5xCOAOtCCokfDv2UVwM%2Frv1Y%2Brv26iyd3i3%2Ft7Wf98kykikt7hXek2PN2rWvEjodrJVFCASmIyYrfmkDbfFlP3FlByQuqeYSBXvrcqVxLLzjA4Jd9nR%2F1YXefn9601p4DuORjGEkQY2CYHzAyFG69yOWWxqMF1TSr9L9%2BsNXb18ctaPO1fBop61G2sdhXNUABFq3l5VXa2Gsw8odG76mBWOUt0DwYgPuVB%2FqPrVqrXs0U6NsYQqgLCYVNK00dQxhWd375DkyTwYA0GrGKPTJRUPS%2BmnaKEH%2BPYwUoGIfeMvgHO%2FnOtfG2XVSa7zWF7bzO517f5vttoZphkM19xdqimdGa%2BQy3TLfoths6jqhrL5MjNRoZpxzjdiaVymKn2HDCggNibciT2fqNDvkbheDqhCppyYfqDbe5mUb3GCcypsY6m%2BnC9Xad6TXlHUiiOiQRh58%2BXT0FEdewtd4Bt4MHpgXg%2BrEpBuPLkE90nFVqmeZjlWVGno6sSy2V93zE2%2F4q91cyA0w3J26AxzT23Q6UHsAvSa3gGjtutzt88CEc%2FC9fFnIXrdvG0Gb1%2BjtutcJ8Lw310fceuStOlbpdfR3x7veXQlYwLB38xxyqk9YAbuiNZiKVyPJUKLVXB6ImpqVO1FVxWOj3PcP0yphLbERkftMUWqGuyXFjcYWAcfSunJT8C%2Bcg4DIl6Vlv9p0PD9Iku7HPoUpmrgVWAt2UVGcmGKc6%2Fkj1vMwBLSQTv%2BKYbPxBE%2Bxn3%2BiaYrEXuCqKK9xO3e0t8Ml12r6dk99Y2Y89v351fDqodAKeQjO3B6eaEnp5%2FiLzeu%2BO7kxDpccEbh11l1FYLcUZE2PXUbXo9U8iC0JkpTQfRSZu3RMr5ZA6wj6oiuzNARRQYfsPzPj3JDBXSPU%2FZlCURFmSJoyzahLPl9aZMV3Y9cH5Mt6GCkBKTrWkvqccdv%2B%2BDUVS%2BVTggSe2mZk5VMjBzl353zg%2FvMR92ARTYx4WB%2BeQuJqbBrYuT8kgzfvUjjcSopwy6lVrpcTALlNK0TD9Jf8OcSBZuOoAu2SicnZIEr2pRNoi5lIJaB7VjR0csuCPJ6MwwtSwzujMCTywPhUKCXK1KhuA1msMhPARZrA4la85g2bmGJ1IkZ3OQ6GnI1Qn%2FWZ7fz65GL5Z%2F%2B%2Bebyefhl4dBOrBZl%2BHCuJLlQlpCHUUBWY5TSFLR6YnDjpwg17yXd%2Ff3g7sH7MHloNnUgecJ000IYEpz1JQVsSlaRaeqiMXD2GEInVoRy0aMHG95unD2uufQbXql%2BGwHj1txTeCCmi6daFeyI1vKhOSLnFdrEd7PBA9We1sm1WinisXH0mdpsUBXltD18Gk6W9HqbTD7GazYmZlI67sYT6%2BzzTAOfgyXs1iX5shLDPLzL%2BAESDzNUcYpfQ4c7QHPgn1qY8TRpJSsaDxJn6XJdJLXMO1t8GsAeMDP2zmargE3r4xhjZlf5LWrAm4wpjdLSadkf51MZN%2BzgVXlkAmkzHQ4WqOqWjBbYbSsC3hgY0T25DxQqsPuIA96DGa4CJmgZOS0lAnvCb0LBl08B3YB4%2FHg2E81peJBDyoEFx7yhccDJSulpTygFUZiJScZE5QKiFvKBEogCKWFLsaMYDkPlOqQO8gDB57Z4sCzcfB4cMxxV9KQHwx%2BO3Sy6NjDrlQKwXNgWhOjzNk3rwfz6c%2F7lz8%2Bf4nj0Zf3l%2Fc%2FqoaN5IcfdOjgYOaV9TZzgWHU504Qt7aoBFLjYBYk7yM7Y4IzgcgI2kGKCrX2Zbx4GjbpXIF0YNo6wwj7SEmnMudfIlDK2KCvZZwdWOpM1zGh6UAAxuCcfranX0K8I5vthdUsId0qFQccSp%2BluVmnmP44mgMnakkNJfV1MlF424QQISsj9yvm1dsEjPINngPn0JNaXqbxt62%2Ft%2B5KrjY3rS6ye1TBZNLMRcrnuOb7BhYmqY7h6PnCk7BKxpLLKAzj7bcnyHt8F46D1Tv%2BBw%3D%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E',
-      reductionLinkDescription: 'Este link lleva a ver el diagrama hecho en draw.',
     },
     normalizacion: {
       title: 'Normalización',
       paragraphs: [
         'En esta sección, se encuentran las evidencias de los talleres sobre modelización',
+      ],
+      links: [
+        {
+          title: 'Ver explicación de normalización',
+          url: 'https://www.youtube.com/watch?v=7m9o1T5HkXs',
+          description: 'Este link lleva a ver la explicación de normalización en YouTube.',
+        },
+        {
+          title: 'Ver ejemplo de normalización',
+          url: 'https://www.youtube.com/watch?v=Z5JqfS8p8aQ',
+          description: 'Este link lleva a ver un ejemplo práctico de normalización en YouTube.',
+        },
       ],
     },
     sql: {
@@ -66,11 +85,35 @@ export const site = {
       paragraphs: [
         'En esta sección, se encuentran las evidencias de los trabajos y talleres sobre SQL',
       ],
+      links: [
+        {
+          title: 'Ver video de SQL',
+          url: 'https://www.youtube.com/watch?v=F7I8dM3W1Ak',
+          description: 'Este link lleva a ver la explicación de SQL en YouTube.',
+        },
+        {
+          title: 'Ver práctica de consultas SQL',
+          url: 'https://www.youtube.com/watch?v=H7Wv8yY3mUM',
+          description: 'Este link lleva a ver una práctica de consultas SQL en YouTube.',
+        },
+      ],
     },
     proyecto: {
       title: 'Proyecto',
       paragraphs: [
         'En esta sección, se encuentran las evidencias de los entregables del proyecto final',
+      ],
+      links: [
+        {
+          title: 'Ver presentación del proyecto',
+          url: 'https://www.youtube.com/watch?v=4d5E3u7NxxU',
+          description: 'Este link lleva a ver la presentación del proyecto en YouTube.',
+        },
+        {
+          title: 'Ver resumen del proyecto',
+          url: 'https://www.youtube.com/watch?v=Qm2wR5v3sC8',
+          description: 'Este link lleva a ver el resumen del proyecto en YouTube.',
+        },
       ],
     },
   },
