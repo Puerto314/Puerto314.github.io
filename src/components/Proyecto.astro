@@ -1,7 +1,8 @@
 ---
 import { site } from '@data/site';
 
-const { title, paragraphs } = site.evidences.proyecto;
+const section = site.evidences.proyecto;
+const links = section.links ?? [];
 ---
 
 <section
@@ -9,13 +10,33 @@ const { title, paragraphs } = site.evidences.proyecto;
   class="mb-24 scroll-mt-24 lg:mb-32 lg:scroll-mt-8"
   aria-labelledby="proyecto-heading"
 >
-  <h2 id="proyecto-heading" class="section-heading">{title}</h2>
-  <div class="reveal-content mt-8 grid items-start gap-10">
-    <div class="space-y-8 body-copy">
-      {paragraphs.map((p) => (
+  <h2 id="proyecto-heading" class="section-heading">{section.title}</h2>
+
+  <div class="reveal-content mt-8 space-y-6">
+    <div class="body-copy">
+      {section.paragraphs.map((p) => (
         <p>{p}</p>
       ))}
     </div>
+
+    {links.length > 0 && (
+      <div class="link-stack">
+        {links.map((link) => (
+          <div class="link-item">
+            <h3 class="link-title">{link.title}</h3>
+            <p class="link-description">{link.description}</p>
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block text-blue-600 underline hover:text-blue-800"
+            >
+              {link.title}
+            </a>
+          </div>
+        ))}
+      </div>
+    )}
   </div>
 </section>
 
@@ -24,6 +45,36 @@ const { title, paragraphs } = site.evidences.proyecto;
     opacity: 0;
     transform: translateY(20px);
     animation: revealIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+
+  .link-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .link-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    background: rgba(15, 23, 42, 0.35);
+    border-radius: 0.75rem;
+    padding: 1rem 1.1rem;
+  }
+
+  .link-title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #f8fafc;
+  }
+
+  .link-description {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.6;
   }
 
   @keyframes revealIn {
