@@ -76,7 +76,7 @@ export const site = {
     normalizacion: {
       title: 'Normalización',
       paragraphs: [
-        'En esta sección, se encuentran las evidencias de los talleres sobre modelización.',
+        'En esta sección, se encuentran las evidencias de los talleres sobre normalización.',
       ],
       links: [
         {
